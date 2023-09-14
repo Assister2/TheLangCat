@@ -27,7 +27,7 @@ export default function Board() {
           >
             
           </div> */}
-          <div className="container px-4 mx-auto">
+          {/* <div className="container px-4 mx-auto">
             <div className="flex flex-wrap">
               <div className="w-full px-4 flex-1 max-w-full h-auto rounded border border-solid border-blueGray-100">
                 <a className="invisilink " href="/board/mps">
@@ -52,7 +52,7 @@ export default function Board() {
                 Advert Space
               </button>
             </div>
-          </div>
+          </div> */}
           <Switch>
             <Route path="/board/mps" exact component={Mps} />
             <Route path="/board/platform" exact component={Platform} />
