@@ -4,8 +4,8 @@ import {Link} from "react-router-dom";
 import {BrowserRouter, Route, Switch, Redirect} from "react-router-dom";
 
 import Landing from "./Landing";
-import Mps from './pages/mps'
-import Platform from './pages/platform'
+import Mps from './pages/Mpsps'
+import Platform from './pages/Platformlatform'
 
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import Footer from "components/Footers/Footer.js";
