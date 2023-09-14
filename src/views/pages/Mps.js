@@ -2,10 +2,12 @@ import React from "react";
 import {Link} from "react-router-dom";
 
 // components
-
+import {BrowserRouter, Route, Switch, Redirect} from "react-router-dom";
 import Navbar from "components/Navbars/AuthNavbar.js";
 import Footer from "components/Footers/Footer.js";
 import CardTable from "components/Cards/CardTable";
+import Addnew from "./Addnew";
+
 
 export default function Mps() {
     const names1=["Test1", "Test2", "Test3", "Test4"];
@@ -54,9 +56,13 @@ export default function Mps() {
                     </span>
                 </div>
                 <div className="w-full px-4 py-4 flex justify-center items-center">
-                    <button className="bg-lightBlue-500 w-2/12 text-white active:bg-lightBlue-600 font-bold uppercase text-base px-6 py-3 rounded shadow-md hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
-                        Create new report
-                    </button>
+                    <a href="/board/mps/addnew">
+                        <Link to="/board/mps/addnew" className="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700">
+                            <button className="bg-lightBlue-500 w-2/12 text-white active:bg-lightBlue-600 font-bold uppercase text-base px-6 py-3 rounded shadow-md hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
+                                Create new report
+                            </button>
+                        </Link>
+                    </a>
                 </div>
                 <div className="flex flex-wrap">
                     <div className="w-full px-4 flex-1">
@@ -66,10 +72,14 @@ export default function Mps() {
                         <div className="w-full px-4 py-6">
                             <CardTable color={"light"} headerTitle={"Completed reports:"} data={completedTableRowData}></CardTable>
                         </div>
-                        
                     </div>
                 </div>
             </div>
+            {/* <Switch>
+                <Route path="/board/mps/addnew" exact
+                    component={Addnew}/>
+                <Redirect from="/board" to="/board" />
+            </Switch> */}
         </main>
     )
 }

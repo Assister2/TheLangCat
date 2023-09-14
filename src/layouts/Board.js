@@ -11,6 +11,8 @@ import FooterSmall from "components/Footers/FooterSmall.js";
 import Platform from "views/pages/Platform";
 import Mps from "views/pages/Mps";
 import Pricing from "views/pages/Pricing";
+import Addnew from "views/pages/Addnew";
+import MainBoard from "views/pages/Mainboard";
 
 export default function Board() {
   return (
@@ -57,6 +59,8 @@ export default function Board() {
             <Route path="/board/mps" exact component={Mps} />
             <Route path="/board/platform" exact component={Platform} />
             <Route path="/board/pricing" exact component={Pricing} />
+            <Route path="/board/mps/addnew" exact component={Addnew} />
+            <Route path="/board" exact component={MainBoard} />
             <Redirect from="/board" to="/board" />
           </Switch>
           {/* <FooterSmall absolute /> */}

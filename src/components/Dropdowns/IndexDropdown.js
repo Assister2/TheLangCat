@@ -7,7 +7,6 @@ const IndexDropdown = () => { // dropdown props
     const [dropdownPopoverShow, setDropdownPopoverShow] = React.useState(false);
     const btnDropdownRef = React.createRef();
     const popoverDropdownRef = React.createRef();
-    const [toggleState, setToggleState] = React.useState(false);
     const openDropdownPopover = () => {
         createPopper(btnDropdownRef.current, popoverDropdownRef.current, {placement: "bottom-start"});
         setDropdownPopoverShow(true);
