@@ -13,15 +13,15 @@ export default function Pricing() {
                 <div className="mt-5 container">
                     <div className="container px-4 mx-auto">
                         <div className="flex flex-wrap">
-                            <div className="w-full px-4 flex-1 max-w-full h-auto rounded border border-solid border-blueGray-100">
+                            <div className="w-full px-4 flex-1 max-w-full h-auto ">
                                 <a className="invisilink " href="/board/mps">
-                                <span className="text-lg block my-4 p-3 text-blueGray-700 text-center font-weight">Due Diligence Reports</span> 
+                                <span className="text-4xl block my-4 p-3 text-blueGray-700 text-center font-weight">Due Diligence Reports</span> 
                                 <div  className="w-12/12 sm:w-12/12 px-4 h-100">
                                     <img src="https://thelangcat.blob.core.windows.net/public/blog/6ab6239a-0345-4d40-a144-ac4d0b018615.png" alt="..." className="rounded max-w-full h-auto align-middle border-none" />
                                 </div>
                                 </a>
                             </div>
-                            <div className="w-full px-4 flex-1 max-w-full h-auto rounded border border-solid border-blueGray-100">
+                            <div className="w-full px-4 flex-1 max-w-full h-auto ">
                                 <a className="invisilink " href="/board/mps">
                                     <span className="text-4xl block my-4 p-3 text-blueGray-700 text-center font-weight">Compare Performance</span>
                                     <div  className="w-12/12 sm:w-12/12 px-4 h-100">
@@ -29,9 +29,9 @@ export default function Pricing() {
                                     </div>
                                 </a>
                             </div>
-                            <div className="w-full px-4 flex-1">
+                            <div className="w-full px-4 flex-1 max-w-full h-auto ">
                                 <a className="invisilink " href="/board/mps">
-                                    <span className="text-4xl block my-4 p-3 text-blueGray-700 text-center font-weight">See Latest changes</span>
+                                    <span className="text-4xl block my-4 p-3 text-blueGray-700  text-center font-weight">See Latest changes</span>
                                     <div  className="w-12/12 sm:w-12/12 px-4 h-100">
                                         <img src="https://thelangcat.blob.core.windows.net/public/blog/6a94e994-d3df-498b-b957-8f1d4ae07022.png" alt="..." className="rounded max-w-full h-auto align-middle border-none" />
                                     </div>
@@ -52,3 +52,4 @@ export default function Pricing() {
         </main>
     )
 }
+// rounded border border-solid border-blueGray-100

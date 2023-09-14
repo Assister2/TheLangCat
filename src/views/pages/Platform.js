@@ -6,7 +6,7 @@ import Footer from "components/Footers/Footer.js";
 export default function Platform() {
   return (
     <>
-      <Navbar fixed />
+      {/* <Navbar fixed /> */}
       <main className="profile-page">
         <section className="relative block h-500-px">
           <div
